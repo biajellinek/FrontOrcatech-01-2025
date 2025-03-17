@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { jwtDecode, JwtPayload } from "jwt-decode"
-import { environment } from '../../enviroments/enviroments';
-import { Login } from '../model/login.spec';
-import { Emissor } from '../model/emissor.model';
+import { environment } from '../../../enviroments/enviroments';
+import { Login } from '../../model/login.spec';
+import { Emissor } from '../../model/emissor.model';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ import { Emissor } from '../model/emissor.model';
 export class LoginServiceService {
 
   http = inject(HttpClient);
-  API = environment.rotaEndPoint+ "auth/login";
+  API = environment.rotaEndPoint + "auth/login";
 
 
   constructor() { }

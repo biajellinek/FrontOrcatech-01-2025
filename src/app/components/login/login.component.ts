@@ -2,7 +2,7 @@ import { Component, inject} from '@angular/core';
 import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { LoginServiceService } from '../../services/login.service';
+import { LoginServiceService } from '../../services/Login.service/login.service';
 import { Login } from '../../model/login.spec';
 
 @Component({
