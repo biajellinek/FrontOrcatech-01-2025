@@ -1,0 +1,50 @@
+<div class="app-container">
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Gerador de Orçamento</h1>
+  </header>
+
+  <!-- Stepper de Navegação -->
+  <div class="stepper">
+    <div class="step" [ngClass]="{ 'active': step === 1, 'completed': step > 1 }">
+      <span>1</span>
+      <p>Emissor</p>
+    </div>
+    <div class="step" [ngClass]="{ 'active': step === 2, 'completed': step > 2 }">
+      <span>2</span>
+      <p>Cliente</p>
+    </div>
+    <div class="step" [ngClass]="{ 'active': step === 3, 'completed': step > 3 }">
+      <span>3</span>
+      <p>Produtos/Serviços</p>
+    </div>
+    <div class="step" [ngClass]="{ 'active': step === 4, 'completed': step > 4 }">
+      <span>4</span>
+      <p>Orçamento</p>
+    </div>
+    <div class="step" [ngClass]="{ 'active': step === 5, 'completed': step > 5 }">
+      <span>5</span>
+      <p>Relatório</p>
+    </div>
+    <div class="step" [ngClass]="{ 'active': step === 6, 'completed': step > 6 }">
+      <span>6</span>
+      <p>Dashboard</p>
+    </div>
+  </div>
+
+  <!-- Área de Conteúdo Gerenciado pelo Roteador -->
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Botões de Navegação -->
+  <div class="button-container">
+    <button (click)="prevStep()" [disabled]="step === 1">Voltar</button>
+    <button (click)="nextStep()" [disabled]="step === 6">Avançar</button>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 - Gerador de Orçamento Online. Todos os direitos reservados.</p>
+  </footer>
+</div>

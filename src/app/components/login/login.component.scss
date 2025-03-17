@@ -1,0 +1,59 @@
+/* Fundo geral */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal do login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilização do card */
+.login-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.card-title {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Botão estilizado */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Campos de input */
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Link de recuperação */
+.text-muted {
+    font-size: 14px;
+}
